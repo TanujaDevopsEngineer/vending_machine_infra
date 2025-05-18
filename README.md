@@ -379,4 +379,4 @@ Here’s a rough sketch of how it all fits together:
 - **URI**: `112736993507.dkr.ecr.eu-west-2.amazonaws.com/vending-machine-microservice`
 
 ## Wrapping Up
-This setup gives you a solid, scalable microservice with public `/beverages` and private `/ingredients` endpoints. AWS services handle reliability, Terraform keeps the infra tidy, Docker ensures consistency, and CloudWatch lets you debug. We focused on security and scalability, sorting out 403 errors through trial and error. After submission, consider restoring the ALB’s `allow_ingredients_vpc` rule and digging into any ECS backend issues if they crop up. Let me know if you hit snags or need more details!
+This setup gives you a solid, scalable microservice with public `/beverages` and private `/ingredients` endpoints. AWS services handle reliability, Terraform keeps the infra tidy, Docker ensures consistency, and CloudWatch lets you debug. 

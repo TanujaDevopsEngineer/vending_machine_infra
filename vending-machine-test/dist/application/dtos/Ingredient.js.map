@@ -1,0 +1,1 @@
+{"version":3,"file":"Ingredient.js","sourceRoot":"","sources":["../../../src/application/dtos/Ingredient.ts"],"names":[],"mappings":";;;AAAA,MAAa,UAAU;IACnB,IAAI,CAAS;IACb,QAAQ,CAAS;IAEjB,YAAY,IAAY,EAAE,QAAgB;QACtC,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;QACjB,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;IAC7B,CAAC;CACJ;AARD,gCAQC"}

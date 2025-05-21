@@ -2,6 +2,14 @@ resource "aws_ecs_cluster" "main" {
   name = "vending-machine-cluster"
 }
 
+resource "aws_cloudwatch_log_group" "ecs" {
+  name              = "/ecs/vending-machine"
+  retention_in_days = 7
+  tags = {
+    Name = "vending-machine-ecs-logs"
+  }
+}
+
 resource "aws_ecs_task_definition" "main" {
   family                   = "vending-machine-task"
   network_mode             = "awsvpc"
@@ -26,7 +34,7 @@ resource "aws_ecs_task_definition" "main" {
       }
     }
   }])
-  depends_on = [aws_ecs_cluster.main]
+  depends_on = [aws_ecs_cluster.main, aws_cloudwatch_log_group.ecs]
 }
 
 resource "aws_ecs_service" "main" {
